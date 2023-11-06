@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferente, ou simplesmente aumente ou diminua a tela do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzir audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML 5</p>
+    <audio src="mida/JosefSukSerenadeOp6 AFarCry.mp3" controls autoplay></audio>
+
+    <h2>Segundo método para reproduzir audios</h2>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="mida/WanderingandFloatingAu.Ra.mp3" type="audio/mpeg">
+        <source src="mida/WanderingandFloatingAu.Ra.ogg" type="audio/ogg">
+        <source src="mida/WanderingandFloatingAu.Ra.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não é compativel para reprodução deste áudio <a href="mida/WanderingandFloatingAu.Ra.mp3">Clique aqui para baixar o arquivo no formato mp3</a></p>
+    </audio>
+
+    <h2>musica de  <p>"Cartoon (Sting) de Twin Musicom é licenciada de acordo com a licença Atribuição 4.0 da Creative Commons. https://creativecommons.org/licenses/by/4.0/ Artista: http://www.twinmusicom.org/"</p></h2>
+
+    <audio preload="metadata" autoplay controls loop >
+        <source src="mida/TwinMusicom.mp3" type="audio/mpeg">
+        <source src="mida/TwinMusicom.ogg" type="audio/ogg">
+        <source src="mida/TwinMusicom.wav" type="audio/wav">
+        <p>Navegador não compatível com o áudio clique aqui para baixar o arquivo
+            <a href="mida/TwinMusicom.mp3"></a>
+        </p>
+    </audio>
+</body>
+</html>

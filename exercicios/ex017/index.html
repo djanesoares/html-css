@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-bre">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            /* Medidas absolutas
+             cm, mm, in, px, pt, pc
+               Medidas relativas
+               em, ex, rem, vw, vh, %
+               16px geralmente = 1em
+            */
+            font-size: 1em;
+            font-weight: bold;
+            /*lighter, normal, bold, bolder*/
+            font-style: italic;
+            /*text-decoration: underline;*/
+
+
+        }
+        h1,h2{
+            font:italic bolder 3em 'Arial',sans-serif;
+        }
+
+        /* dica para condensar essas configurações para se tornar mais prátca
+        
+          conhecida como shorthand ("mâozinha") font
+          tem que seguir a ordem
+          - font-style-->font-weight-->font-size-->font-family
+          font:italic bolder 3em 'Arial',sans-serif;
+        */
+
+        h3{
+            font:bold 4em 'Arial';
+        }
+
+
+
+    </style>
+</head>
+<body >
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quidem sed ullam facere aperiam alias tenetur hic dolor asperiores, blanditiis exercitationem temporibus deleniti! Repellendus illo repudiandae earum facilis dicta. Atque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam quae, odit temporibus iure suscipit placeat expedita delectus molestiae blanditiis, omnis dolores neque voluptates libero, veritatis ipsum quis architecto accusamus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi itaque odio recusandae corporis quo sed atque, excepturi repudiandae! Est pariatur maiores nemo non accusamus placeat. Officia deleniti quam ullam culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore unde consectetur quasi tenetur voluptatum aliquid nam excepturi nostrum quae, deserunt illo impedit debitis veniam soluta totam dolores. Voluptatibus, sint laboriosam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur veritatis beatae necessitatibus amet quod, delectus inventore! Sit aut asperiores nisi esse illo eaque ab natus deleniti quia qui, amet repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, deleniti nam? Officia distinctio voluptatum aspernatur eius laborum adipisci, quo odio reiciendis ad consequatur repudiandae assumenda ipsam alias dignissimos quaerat molestiae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, pariatur nihil voluptates, quod quam iusto quia eaque voluptatum laudantium explicabo, officiis dolor animi? Quisquam corrupti reiciendis impedit voluptatem, a dolor. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi obcaecati dolore tempore et quia, expedita repellat harum amet sunt eum eveniet nihil, quidem tempora voluptate necessitatibus at nulla iste itaque.</p>
+    <h2>Sub Título</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione delectus aliquid asperiores, laudantium impedit repellendus explicabo possimus debitis, aliquam similique, sit iure libero. Reprehenderit omnis voluptatibus nostrum fugit esse. Eius? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam aliquam eius, aliquid molestiae numquam ullam ratione, aspernatur quam, nobis error! Minima perferendis repellat aspernatur eius. Mollitia nemo ea suscipit.</p>
+    <h3>Sub Título</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quasi natus earum ea a dicta architecto aliquam consequatur voluptates facere ipsa officia enim quos, ad debitis! Nihil, velit! Ad, voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At excepturi magni adipisci rerum sed nesciunt incidunt. Ab aliquid quia illo, non quod harum id dolor laborum nemo libero suscipit qui.</p>
+</body>
+</html>

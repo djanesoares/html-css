@@ -1,0 +1,171 @@
+
+    @font-face {
+        font-family:'Idrod' ;
+        src: url('idroid.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+  
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            background-color:#9AEBA3;
+            
+        }
+        header{
+            background-image:linear-gradient(to bottom,#24cf3e,#158526);
+            
+        }
+
+        main{
+            background-color: white;
+            padding: 5px;
+            margin-top: 0px;
+            margin-left: 237px;
+            margin-bottom: 0px;
+            margin-right: 237px;
+            border-radius: 5px 5px;
+            box-shadow: -1px 5px 5px 5px rgba(0, 0, 0, 0.164);
+        }
+
+
+        .formatado{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #126b21;
+            font-weight: bold;
+
+        }
+
+
+        h1{
+          font-family: 'Idrod',Times,serif;
+           margin: -8px 0px 0px 0px;
+           padding: 10px 0px -8px -8px;
+        }
+
+        h1#cab{
+            font-family: Arial, Helvetica, sans-serif;
+             text-align: center;
+             color:white
+             
+            
+            
+        }
+        h4{
+            color: white;
+            padding: 10px 0px -8px -8px;
+            text-align: center;
+                          
+        }
+        nav{
+            padding: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0,0.315);
+            font-size: 1em;
+
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+        nav > a:hover{
+            text-decoration: underline;
+
+        }
+
+        footer{
+            background-color: #06290c;
+            color: white;
+            text-align: center;
+        }
+
+        footer > p{
+            margin: 10px;
+        }
+
+      .prsection{
+        padding: 20px;
+        margin: 5px;
+        text-align: justify;
+      }
+
+      .historia{
+        padding: 10px;
+        text-align: justify;
+      }
+      .versao{
+        font-family: 'Idrod',Times,serif;
+        padding: 10px;
+        text-align: justify;
+        font-size: 1em;
+        background-image: linear-gradient(to right, #46c256,#86df92,#c7d4c9);
+        
+      }
+
+      .imagem{
+       text-align: center;
+      }
+
+      .video{
+        background-color: #06290c;
+        text-align: center;
+        padding: 10px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+      }
+
+      h2#extra{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        color: white;
+        background-color: #158526;
+        border-radius: 5px 5px;
+        
+      }
+      #lista{
+        display:inline-block;
+        
+      }
+      .extra{
+        background-color: #d9fddc;
+        margin: 20px;
+      }
+      
+      ul{
+            list-style: none;
+        }
+        .item{
+            position: relative;
+            margin: 10px 0px;
+            
+        }
+        .item::before{
+            content: '';
+            position: relative;
+            left: 0;
+            top: 0;
+            padding: 5px 15px;
+            background-image: url(img/success_105075.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 3px;
+            font-size: 85%;
+        
+        }
+        .tab{
+            tab-size: 2;
+        }
+
+        #link{
+            text-decoration: none;
+        }    
+        
+        p{
+            text-indent: 12px;
+        }
+
+
