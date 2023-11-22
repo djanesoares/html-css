@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        table{
+            width: 800px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead > tr >th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        
+        thead,tfoot{
+            background-color: #383838;
+            color: white;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        /*
+         colocar efeito zebrado com celuares em pares e impares, de 2 em 2, de 5 em 5 etc
+
+         tbody>tr:nth-child(5n){
+            bacground-color: ligthgray;
+         }
+         efeito zebrado pares
+         tbody>tr:nth-child(odd){ ou com (2n-1)
+            bacground-color: ligthgray;
+            font-wheigth: bold;
+         }
+
+         efeito zebrado impares
+         tbody>tr:nth-child(even){ ou com (2n)
+            bacground-color: white;
+            font-decorate: underline;
+         }
+         
+        
+        */
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas Grandes
+        CAPTION
+        TABLE
+         THEAD
+            TR,TD,TH
+         TBODY
+            TR,TD,TH
+         TFOOT 
+            TR,TD,TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 200px;">Unidade Federativa</th>
+                <th scope="col" style="width: 100px;">Populacão (Censo de 2022)</th>
+                <th scope="col" style="width: 100px;">Populacão (Censo de 20210</th>
+                <th scope="col" style="width: 60px;">Mudança</th>
+                <th scope="col"style="width: 60px;">% da pop. total</th>
+                <th scope="col"style="width: 350px;">País comparável (habitantes)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+                <td class="num">41 262 199</td>
+                <td class="num">+7.63%</td>
+                <td class="num">21,88%</td>
+                <td> Argentina (46 621 847)</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+                <td class="num">19 597 330</td>
+                <td class="num">+4.81%</td>
+                <td class="num">10,11%</td>
+                <td> Burquina Fasso (20 903 273)</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+                <td class="num">15 989 929</td>
+                <td class="num">+0.40%</td>
+                <td class="num">7,91%</td>
+                <td>Camboja (16 718 965)</td>
+            </tr>
+            <tr>
+                <td> Bahia</td>
+                <td class="num">14 141 626</td>
+                <td class="num">14 016 906</td>
+                <td class="num">+0.89%</td>
+                <td class="num">6,96%</td>
+                <td> Zimbabwe (14 862 924)</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380	</td>
+                <td class="num">10 444 526</td>
+                <td class="num">+9.57%</td>
+                <td class="num">5,64%</td>
+                <td>Tunísia (11 818 619)</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+                <td class="num">10 693 929</td>
+                <td class="num">+1.76%</td>
+                <td class="num">5,36%</td>
+                <td> Cuba (11 326 616)</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+                <td class="num">8 796 448</td>
+                <td class="num">+2.98%</td>
+                <td class="num">4,46%</td>
+                <td>Áustria (9 006 398)</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+                <td class="num">8 452 381</td>
+                <td class="num">+4.05%</td>
+                <td class="num">4,33%</td>
+                <td>Papua-Nova Guiné (8 947 024)</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+                <td class="num">7 581 051</td>
+                <td class="num">+7.12%</td>
+                <td class="num">4,1%</td>
+                <td>Suíça (8 654 622)</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+                <td class="num">6 248 436</td>
+                <td class="num">+21.78%</td>
+                <td class="num">3,75%</td>
+                <td>Laos (7 749 595)</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 056 495</td>
+                <td class="num">6 003 788</td>
+                <td class="num">+17.51%</td>
+                <td class="num">3,47%</td>
+                <td>Bulgária (6 948 445)</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 775 805</td>
+                <td class="num">6 574 789</td>
+                <td class="num">+3.05%</td>
+                <td class="num">3,34%</td>
+                <td>Bulgária (6 948 445)</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 974 687</td>
+                <td class="num">3 766 528</td>
+                <td class="num">+5.52%</td>
+                <td class="num">1,96%</td>
+                <td>Geórgia (3 989 167)</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 941 613</td>
+                <td class="num">3 483 985</td>
+                <td class="num">+13.12%</td>
+                <td class="num">1,94%</td>
+                <td>Geórgia (3 989 167)</td>
+            </tr>
+            <tr>
+                <td> Espírito Santo</td>
+                <td class="num">3 833 712</td>
+                <td class="num">3 514 952</td>
+                <td class="num">+9.06%</td>
+                <td class="num">1,89%</td>
+                <td>Geórgia (3 989 167)</td>
+            </tr>
+            <tr>
+                <td> Mato Grosso</td>
+                <td class="num">3 658 649</td>
+                <td class="num">3 035 122</td>
+                <td class="num">+20.55%</td>
+                <td class="num">1,8%</td>
+                <td> Geórgia (3 989 167)</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Norte</td>
+                <td class="num">3 302 729</td>
+                <td class="num">3 168 027</td>
+                <td class="num">+4.24%</td>
+                <td class="num">1,63%</td>
+                <td>Uruguai (3 473 730)</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 272 199</td>
+                <td class="num">3 118 360</td>
+                <td class="num">+4.88%</td>
+                <td class="num">1,61%</td>
+                <td>Bósnia e Herzegovina (3 280 819)</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 127 683</td>
+                <td class="num">3 120 494</td>
+                <td class="num">+0.23%</td>
+                <td class="num">1,54%</td>
+                <td>Mónaco (3 278 290)</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 817 381</td>
+                <td class="num">2 570 160</td>
+                <td class="num">+9.62%</td>
+                <td class="num">1,39%</td>
+                <td> Armênia (2 963 243)</td>
+            </tr>
+            <tr>
+                <td> Mato Grosso do Sul</td>
+                <td class="num">2 757 013</td>
+                <td class="num">2 449 024</td>
+                <td class="num">+12.56%</td>
+                <td class="num">1,36%</td>
+                <td> Albânia (2 877 797)</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 209 558</td>
+                <td class="num">2 068 017</td>
+                <td class="num">+6.86%</td>
+                <td class="num">1,09%</td>
+                <td>Gabão (2 225 734)</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 581 196</td>
+                <td class="num">1 562 409</td>
+                <td class="num">+1.19%</td>
+                <td class="num">0,78%</td>
+                <td>Bahrein (1 701 575)</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 511 460</td>
+                <td class="num">1 383 445</td>
+                <td class="num">+9.25%</td>
+                <td class="num">0,74%</td>
+                <td>Guiné Equatorial (1 402 985)</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+                <td class="num">733 559</td>
+                <td class="num">+13.15%</td>
+                <td class="num">0,41%</td>
+                <td> Comores (869 601)</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">733 759</td>
+                <td class="num">669 526</td>
+                <td class="num">+9.56%</td>
+                <td class="num">0,36%</td>
+                <td> Guiné Equatorial (786 552)</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636 707</td>
+                <td class="num">450 479</td>
+                <td class="num">+41.26%</td>
+                <td class="num">0,31%</td>
+                <td> Montenegro (649 335)</td>
+            </tr>
+
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total habitantes</th>
+                <strong>
+                    <td class="num">203 062 512	</td>
+                </strong>
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae veniam doloremque, dolores laboriosam eaque minima molestiae facilis ipsa, vitae consequuntur officiis quo, maxime autem ratione necessitatibus mollitia perferendis numquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolorem reprehenderit odio dolores quibusdam harum aliquam quod, porro consectetur laudantium quasi incidunt velit totam aperiam, doloremque odit. Dolores, labore cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut magnam similique placeat repudiandae libero inventore explicabo id quod perferendis aliquam nihil totam blanditiis incidunt sint atque eveniet, aliquid necessitatibus accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti ad sapiente illum natus, dignissimos facere quam animi ab, blanditiis consectetur? Adipisci totam provident explicabo facilis nihil reprehenderit magnam repellat?</p>
+    
+</body> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae veniam doloremque, dolores laboriosam eaque minima molestiae facilis ipsa, vitae consequuntur officiis quo, maxime autem ratione necessitatibus mollitia perferendis numquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolorem reprehenderit odio dolores quibusdam harum aliquam quod, porro consectetur laudantium quasi incidunt velit totam aperiam, doloremque odit. Dolores, labore cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut magnam similique placeat repudiandae libero inventore explicabo id quod perferendis aliquam nihil totam blanditiis incidunt sint atque eveniet, aliquid necessitatibus accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti ad sapiente illum natus, dignissimos facere quam animi ab, blanditiis consectetur? Adipisci totam provident explicabo facilis nihil reprehenderit magnam repellat?</p>
+</html> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae veniam doloremque, dolores laboriosam eaque minima molestiae facilis ipsa, vitae consequuntur officiis quo, maxime autem ratione necessitatibus mollitia perferendis numquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolorem reprehenderit odio dolores quibusdam harum aliquam quod, porro consectetur laudantium quasi incidunt velit totam aperiam, doloremque odit. Dolores, labore cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut magnam similique placeat repudiandae libero inventore explicabo id quod perferendis aliquam nihil totam blanditiis incidunt sint atque eveniet, aliquid necessitatibus accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti ad sapiente illum natus, dignissimos facere quam animi ab, blanditiis consectetur? Adipisci totam provident explicabo facilis nihil reprehenderit magnam repellat?</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae veniam doloremque, dolores laboriosam eaque minima molestiae facilis ipsa, vitae consequuntur officiis quo, maxime autem ratione necessitatibus mollitia perferendis numquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolorem reprehenderit odio dolores quibusdam harum aliquam quod, porro consectetur laudantium quasi incidunt velit totam aperiam, doloremque odit. Dolores, labore cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut magnam similique placeat repudiandae libero inventore explicabo id quod perferendis aliquam nihil totam blanditiis incidunt sint atque eveniet, aliquid necessitatibus accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti ad sapiente illum natus, dignissimos facere quam animi ab, blanditiis consectetur? Adipisci totam provident explicabo facilis nihil reprehenderit magnam repellat?</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae veniam doloremque, dolores laboriosam eaque minima molestiae facilis ipsa, vitae consequuntur officiis quo, maxime autem ratione necessitatibus mollitia perferendis numquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolorem reprehenderit odio dolores quibusdam harum aliquam quod, porro consectetur laudantium quasi incidunt velit totam aperiam, doloremque odit. Dolores, labore cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut magnam similique placeat repudiandae libero inventore explicabo id quod perferendis aliquam nihil totam blanditiis incidunt sint atque eveniet, aliquid necessitatibus accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti ad sapiente illum natus, dignissimos facere quam animi ab, blanditiis consectetur? Adipisci totam provident explicabo facilis nihil reprehenderit magnam repellat?</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae veniam doloremque, dolores laboriosam eaque minima molestiae facilis ipsa, vitae consequuntur officiis quo, maxime autem ratione necessitatibus mollitia perferendis numquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolorem reprehenderit odio dolores quibusdam harum aliquam quod, porro consectetur laudantium quasi incidunt velit totam aperiam, doloremque odit. Dolores, labore cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut magnam similique placeat repudiandae libero inventore explicabo id quod perferendis aliquam nihil totam blanditiis incidunt sint atque eveniet, aliquid necessitatibus accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti ad sapiente illum natus, dignissimos facere quam animi ab, blanditiis consectetur? Adipisci totam provident explicabo facilis nihil reprehenderit magnam repellat?</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae veniam doloremque, dolores laboriosam eaque minima molestiae facilis ipsa, vitae consequuntur officiis quo, maxime autem ratione necessitatibus mollitia perferendis numquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolorem reprehenderit odio dolores quibusdam harum aliquam quod, porro consectetur laudantium quasi incidunt velit totam aperiam, doloremque odit. Dolores, labore cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut magnam similique placeat repudiandae libero inventore explicabo id quod perferendis aliquam nihil totam blanditiis incidunt sint atque eveniet, aliquid necessitatibus accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti ad sapiente illum natus, dignissimos facere quam animi ab, blanditiis consectetur? Adipisci totam provident explicabo facilis nihil reprehenderit magnam repellat?</p>
