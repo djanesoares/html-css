@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* Todas as demais mídias */
+
+/* Typical Device Dreakpoints 
+Pequenas Telas: até 600px
+celular: de 600px até 768px
+Tablet: de 768 até 992px
+Desktop: de 992 px até 1200 px
+Grandes telas: acima de 1200 px
+
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+
+*/
+
+@media print {
+    
+}
+
+@media
