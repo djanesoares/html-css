@@ -15,7 +15,7 @@ header{
     background-color: rgb(148, 148, 148);
 }
 
-header h1{
+header > h1{
     text-align: center;
     padding: 10px;
 }
@@ -39,7 +39,7 @@ menu{
 }
 
 menu > ul{
-    list-style: none;
+    list-style-type: none;
 }
 
 menu > ul > li > a{
