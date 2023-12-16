@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.no-wrap{
+    flex-wrap: nowrap;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+.wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+/* Flex container */
+h1{
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+body{
+    font-family: monospace;
+    color: #333;
+
+}
+
+.container{
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #333;
+
+}
+
+.item{
+    flex:1;
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
