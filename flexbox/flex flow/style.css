@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.row-nowrap {
+	flex-flow: row nowrap;
+}
+.column-nowrap {
+	flex-flow: column nowrap;
+}
+.row-wrap {
+	flex-flow: row wrap;
+}
+
+/* Flex */
+
+h1{
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+body{
+    font-family: monospace;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.container{
+    max-width: 360px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    display: flex;
+}
+
+.item{
+    flex: 1;
+    margin:5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
